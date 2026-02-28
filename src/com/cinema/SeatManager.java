@@ -16,10 +16,10 @@ public class SeatManager {
     //画电影院座位示意图
     public void drawSeat () {
         System.out.println("-------------QG工作室-------------");
-
+        System.out.print("    ");
         //打印列号
         for (int c = 1; c <= col; c++) {
-            System.out.printf("%3d ", c);
+            System.out.printf("%2d ", c);
         }
         System.out.println();
 
@@ -28,16 +28,16 @@ public class SeatManager {
             System.out.print(r + "  ");
             for (int n = 1; n <= 10; n++) {
                 if (seats[r - 1][n - 1] == 0) {
-                    System.out.print("[ ] ");
+                    System.out.print("[ ]");
                 }
                 else {
-                    System.out.print("[x] ");
+                    System.out.print("[x]");
                 }
             }
             System.out.println();
         }
 
-        System.out.println("-------------------------------");
+        System.out.println("---------------------------------");
     }
 
     //购票方法
